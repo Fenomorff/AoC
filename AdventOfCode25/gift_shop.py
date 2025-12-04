@@ -1,5 +1,4 @@
-# pylint: disable=missing-function-docstring
-"""solution for 2st part day 2 of AoC25 https://adventofcode.com/2025/day/1"""
+"""solution for 2st part day 2 of AoC25 https://adventofcode.com/2025/day/2"""
 
 def read_file(fname):
     """reads file and saves content in list, deviding by comma 
@@ -74,12 +73,12 @@ def part_2(ids_list):
 
 def main():
     """reads file and prints 4 answers and tests for each day"""    
-    ids = read_file('AdventOfCode25/Day_2/input.txt')
-    testfile = read_file('AdventOfCode25/Day_2/test.txt')
+    puzzle_input = read_file('input.txt')
+    testfile = read_file('test.txt')
     print(f'Part 1 Test Answer: {part_1(testfile)}')
-    print(f'Part 1 Answer: {part_1(ids)}')
+    print(f'Part 1 Answer: {part_1(puzzle_input)}')
     print(f'Part 2 Test Answer: {part_2(testfile)}')
-    print(f'Part 2 Answer: {part_2(ids)}')
+    print(f'Part 2 Answer: {part_2(puzzle_input)}')
 
 
 if __name__ == '__main__':
